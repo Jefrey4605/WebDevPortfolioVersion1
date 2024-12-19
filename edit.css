@@ -1,0 +1,213 @@
+
+#master{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    opacity: 1;
+}
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+p {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    font-style: normal;
+    position: absolute;  /* Keep the p elements positioned absolutely */
+    white-space: nowrap;
+}
+
+#name{ 
+    position: relative;
+    color:white;  
+ top: 26vw;
+
+ left: 35vw; 
+ margin: 0px;
+ font-family: "Doto", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500%;
+  font-style: normal;
+ z-index: 2;
+ font-size: 500%;
+}
+
+
+
+#trailer{
+    z-index: 10000;
+    position: fixed;
+    pointer-events: none;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+body:hover > #trailer
+{
+    opacity: 1;
+}
+
+#homepage{
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: 10;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    transition: width 1000ms ease;
+    transition: height 1000ms ease;
+}
+#left
+{
+    opacity: 0;
+    z-index: 22;
+    width: 5%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 0px;
+    background-color: pink;
+    transition: width 1000ms ease;
+}
+
+#right
+{
+    
+    opacity: 0;
+    z-index: 22;
+    width: 5%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    right: 0px;
+    background-color: blue;
+}
+
+#top
+{
+    
+    opacity: 0;
+    z-index: 23;
+    width: 80%;
+    height: 5%;
+    position: absolute;
+    top: 0px;
+    left: 10%;
+    background-color: red;
+}
+#bottom
+{
+    opacity: 0;
+    z-index: 23;
+    width: 80%;
+    height: 5%;
+    position: absolute;
+    top: 95%;
+    left: 10%;
+    background-color: green;
+}
+
+#projecttext
+{
+    position: relative;
+}
+.side{
+    top: 0px;
+    left: 0px;
+    height: 100vw;
+    width: 0vw;
+    overflow: hidden;
+    position:absolute;
+}
+
+.side .title{
+    color: white;
+    font-family: "Doto", monospace;
+    margin: 0px 15vw;
+    width: 70vw;
+    
+}
+
+
+#projecttext
+{
+    position: relative;
+    color:black;  
+ top: 26vw;
+
+ left: 35vw; 
+ margin: 0px;
+ font-family: "Doto", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500%;
+  font-style: normal;
+ z-index: 2;
+ font-size: 500%;
+    
+}
+#exptext
+{
+    position: relative;
+    color:black;  
+ top: 26vw;
+
+ left: 35vw; 
+ margin: 0px;
+ font-family: "Doto", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500%;
+  font-style: normal;
+ z-index: 2;
+ font-size: 500%;
+    
+}
+#leftpage{
+    background-color: yellow;
+    z-index: 11;
+    transition: width 1000ms ease;
+}
+
+#rightpage{
+    top: 0vx;
+    left: 100%;
+    background-color: rgb(255, 59, 59);
+    z-index: 15;
+    width: 0%;
+    transition: left 1000ms ease, width 1000ms ease;
+}
+
+#s1{
+    position: absolute;
+    font-weight: bolder;
+}
+#s2{
+    position: absolute;
+    font-weight: bolder;
+    top: 300px;
+}
+#s3{
+    position: absolute;
+    font-weight: bolder;
+}
+#s4{
+    position: absolute;
+    font-weight: bolder;
+}
